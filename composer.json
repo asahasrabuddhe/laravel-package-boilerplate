@@ -1,0 +1,32 @@
+{
+    "name": "vendor/package",
+    "description": "",
+    "keywords": ["laravel", ""],
+    "homepage": "",
+    "authors": [{
+        "name": "Ajitem Sahasrabuddhe",
+        "email": "ajitem.s@outlook.com"
+    }, {
+        "name": "",
+        "email": ""
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Package\\": "src/Package"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vendor\\Package\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\Package\\ServiceProvider"
+            ]
+        }
+    },
+    "license": ""
+}
