@@ -88,5 +88,8 @@ class PackageServiceProvider extends ServiceProvider
         $this->app->singleton('package', function ($app) {
             return new Package();
         });
+
+        // Register Events and Listeners
+        // $this->app->register(Providers\PackageEventServiceProvider::class);
     }
 }
